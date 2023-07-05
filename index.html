@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>YourEBike</title>
+</head>
+
+<body>
+
+  <Section class="welcome-section">
+    <div class="wrapper">
+      <div class="red-figure"></div>
+    </div>
+  <nav class="navbar bg-body-transparent">
+    
+      <a class="navbar-brand" href="#">
+        <img src="images/logo.png" alt="Logo" width="150" class="d-inline-block align-text-top logo">
+        <div class="logo_text"><span class="logo_black">Your</span><span class="logo_red">EBike</span><br><span class="under_text">Online-store</span></div></a>
+     
+      <ul class="nav">
+        <li><a href="#lineup">Lineup of e-bikes</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#questionnaire">Questionnaire</a></li>
+        <li><a href="#giftCards">Gift Cards</a></li>
+        <li><a href="#consultModal4" id="contactUsLink">Contact us</a></li>
+     </ul>
+    
+      </nav>
+
+ 
+   
+  
+
+  <h1>Let us help you choose the<br><span class="EBIKE"><span class="red-e">E</span>bike</span><span class="red"> that fits you best!</span></h1>
+
+  <p  class="description">You don’t need the cheapest Ebike! You don’t need the most expensive Ebike! You need the right Ebike and we can help you choose it! </p>
+
+  <div><img class="main-bike" src="images/bike_main.png" alt=""></div>
+
+<div>
+  <dl class="descr-list1">
+    <div>
+    <dd>BATTERY RANGE</dd>
+    <dt class="dt1">70 km</dt>
+    </div>
+    <div>
+      <dd class="dd2">CHARGING TIME</dd>
+      <dt class="dt2">3.5 hours</dt>
+      </div>
+    </dl>
+  </div>
+
+  <div>
+      <dl class="descr-list2">
+      <div>
+        <dd>ASSIST SPEED</dd>
+        <dt class="dt3">25 kmph</dt>
+        </div>
+        <div>
+          <dd class="dd4">WEIGHT</dd>
+          <dt class="dt4">16.9 kg</dt>
+          </div>
+  </dl>
+</div>
+
+<button type="button" class="btn1 btn " data-bs-toggle="modal" data-bs-target="#consultModal">Best consultation ever - Free</button>
+<div class="modal" id="consultModal">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title">BEST CONSULTATION EVER <span class="free">(FREE)</span></h3>
+           <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+         <div class="modal-body">
+          <p class="modal-descr" style="text-align: center; font-style: italic;">Let us help you choose the e-bike that fits you best!</p>
+          <form action="https://formsubmit.co/ciobanudumitru1@gmail.com" method="POST">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_subject" value="New E-Bike submission!">
+            <input type="hidden" name="_next" value="http://127.0.0.1:5500/EBikes/thankyoupage/index.html">
+            <div class="mb-3">
+            <label for="formGroupModalInputName" class="form-label modal-label">Name</label>
+            <input type="text" name="Contact_Name" class="input form-control modal-input fst-italic" id="formGroupModalInputName" style="width: 450px;" placeholder="Write your answer here" required>
+          </div>
+          <div class="mb-3">
+            <label for="formGroupModalInputPhoneNumber" class="form-label modal-label">Phone Number</label>
+            <input type="text" name="Phone_Number" class="input form-control modal-input fst-italic" id="formGroupModalInputPhoneNumber" style="width: 450px;" placeholder="Write your answer here" required>
+          </div>
+          <button type="submit" class="btn btn-success mt-4 modal-submit" style="width: 450px;">Submit</button>
+          </form>
+         </div>
+    </div>
+  </div>
+</div>
+
+</Section>
+
+<section id="lineup" class="second-section">
+  <div class="lineup">
+    <h2>Lineup of e-bikes</h2>
+  </div>
+
+  <p class="desc-bikes">People buy ebikes for a variety of reasons. They are an eco-friendly alternative to cars and can save money on gas and parking. They also provide an easy and efficient way to commute to work or run errands, without the sweat and fatigue associated with traditional biking.</p>
+
+  <div>
+    <dl class="list-bike">
+      <div class="bike-list">
+        <img class="list-bike-img" src="images/E-TORQUE_.png" alt="">
+      <dd class="list-desc-bike">E-TORQUE</dd>
+      <dt class="list-price-bike">$1,499.00</dt>
+     <a href="models/E-TORQUE.pdf" type="button" class="btn btn-pdf btn-outline-dark" download target="_blank"">view characteristics</a>
+      </div>
+      <div class="bike-list">
+        <img class="list-bike-img" src="images/FAT_AWD_.png" alt="">
+      <dd class="list-desc-bike">FAT-AWD</dd>
+      <dt class="list-price-bike">$1,559.00</dt>
+      <a href="models/FAT-AWD.pdf" type="button" class="btn btn-pdf btn-outline-dark" download target="_blank"">view characteristics</a>
+      </div>
+      <div class="bike-list">
+        <img class="list-bike-img" src="images/UHVO_.png" alt="">
+      <dd class="list-desc-bike">UHVO</dd>
+      <dt class="list-price-bike">$1,599.00</dt>
+      <a href="models/UHVO.pdf" type="button" class="btn btn-pdf btn-outline-dark" download target="_blank"">view characteristics</a>
+      </div>
+      <div class="bike-list">
+        <img class="list-bike-img" src="images/MAX-CARGO_.png" alt="">
+      <dd class="list-desc-bike">MAX-CARGO</dd>
+      <dt class="list-price-bike">$1,699.00</dt>
+      <a href="models/MAX-CARGO.pdf" type="button" class="btn btn-pdf btn-outline-dark" download target="_blank"">view characteristics</a>
+      </div>
+      <div class="bike-list">
+        <img class="list-bike-img" src="images/FLASH_.png" alt="">
+      <dd class="list-desc-bike">FLASH</dd>
+      <dt class="list-price-bike">$1,999.00</dt>
+      <a href="models/FLASH.pdf" type="button" class="btn btn-pdf btn-outline-dark" download target="_blank"">view characteristics</a>
+      </div>
+      <div class="bike-list">
+        <img class="list-bike-img" src="images/SPECTER-S_.png" alt="">
+      <dd class="list-desc-bike">SPECTER-S</dd>
+      <dt class="list-price-bike">$3,799.00</dt>
+      <a href="models/SPECTER-S 2023.pdf" type="button" class="btn btn-pdf btn-outline-dark" download target="_blank"">view characteristics</a>
+      </div>
+      </dl>
+    </div>
+  
+    <p class="desc-bikes2">Additionally, they can provide a fun and exciting way to explore new places and get some exercise at the same time.</p>
+  
+    <button type="button" class="btn2 btn" data-bs-toggle="modal" data-bs-target="#consultModal2">Why do you want an Ebike?</button>
+<div class="modal" id="consultModal2">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title2">Why do you want an Ebike?</h3>
+           <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+         <div class="modal-body">
+          <p class="modal-descr" style="text-align: center; font-style: italic;">To help you find the e-bike that fits you best we need to know why you want to buy one!</p>
+          <form action="https://formsubmit.co/ciobanudumitru1@gmail.com" method="POST">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_subject" value="New E-Bike submission!">
+            <input type="hidden" name="_next" value="http://127.0.0.1:5500/EBikes/thankyoupage/index.html">
+            <div class="input-group mb-3 option-line">
+              <label class="input-group-text form-control options-label" for="inputGroupSelect01">Options</label>
+              <select name="Option" class="form-select form-control fst-italic" id="inputGroupSelect01">
+                <option selected>Choose...</option>
+                <option value="For fun">For fun</option>
+                <option value="For daily needs(go to the store, to work etc)">For daily needs(go to the store, to work etc)</option>
+                <option value="A gift">A gift</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="formGroupModalOtherOption" class="form-label modal-label2">Other Option</label>
+              <textarea name="Other_Option" id="formGroupModalOtherOption" cols="30" rows="2" class="form-control fst-italic" style="width: 450px;" placeholder="Write your own option here"></textarea>
+            </div>
+          
+            <div class="mb-3">
+            <label for="formGroupModalInputName" class="form-label modal-label">Name</label>
+            <input type="text" name="Contact_Name" class="input form-control modal-input fst-italic" id="formGroupModalInputName" style="width: 450px;" placeholder="Write your answer here" required>
+          </div>
+          <div class="mb-3">
+            <label for="formGroupModalInputPhoneNumber" class="form-label modal-label">Phone Number</label>
+            <input type="text" name="Phone_Number" class="input form-control modal-input fst-italic" id="formGroupModalInputPhoneNumber" style="width: 450px;" placeholder="Write your answer here" required>
+          </div>
+          <button type="submit" class="btn btn-success mt-4 modal-submit" style="width: 450px;">Submit</button>
+          </form>
+         </div>
+    </div>
+  </div>
+</div>
+
+</section>
+
+<section id="features" class="third-section">
+<h2 class="features-title">What is important for you?</h2>
+
+<div>
+  <dl class="list-features">
+    <div class="feat-list">
+      <img class="feat-img" src="images/battery.png" alt="">
+    <dd class="feat-title">Battery</dd>
+    <dt class="feat-desc">A good battery is a crucial component of an ebike. It provides a long-lasting and reliable source of power, allowing the rider to travel a significant distance without the need for frequent recharging. Additionally, a good battery is lightweight and easily removable for convenient charging and storage.</dt>
+    </div>
+    <div class="feat-list">
+      <img class="feat-img" src="images/speed.png" alt="">
+    <dd class="feat-title">Speed</dd>
+    <dt class="feat-desc">Ebikes typically have a minimum speed of around 15 mph, with maximum speeds ranging from 20-28 mph depending on the model. It's important to note that in most areas, ebikes are subject to the same speed limits as traditional bicycles, and exceeding these limits can result in fines or other penalties. However, the added boost of an electric motor can make it easier to reach and maintain these speeds, providing a faster and more efficient way to travel.</dt>
+    </div>
+    <div class="feat-list">
+      <img class="feat-img" src="images/guarantee.png" alt="">
+    <dd class="feat-title">Guarantee</dd>
+    <dt class="feat-desc">When purchasing an ebike, it's important to consider the guarantee provided by the manufacturer. A good guarantee should cover the frame, motor, battery, and other components for at least one year, and ideally up to three years or more. This provides peace of mind and protection against any potential defects or issues that may arise with regular use. Additionally, it's important to read the terms and conditions of the guarantee carefully to ensure that it covers all necessary repairs and replacements.</dt>
+    </div>
+    <div class="feat-list">
+      <img class="feat-img" src="images/safety.png" alt="">
+    <dd class="feat-title">Safety</dd>
+    <dt class="feat-desc">Safety is a top priority when it comes to riding an ebike. Look for models that come equipped with safety features such as lights, reflectors, and sturdy brakes. Additionally, always wear a helmet and consider investing in other safety gear such as reflective clothing or gloves. It's also important to follow traffic laws and ride defensively, especially when sharing the road with other vehicles. By prioritizing safety, you can enjoy the benefits of riding an ebike while minimizing the risks.</dt>
+    </div>
+    </dl>
+</div>
+
+<p class="feat-desc2">Ebikes come in a variety of shapes and sizes, and can be designed for a variety of purposes. Some are built for commuting, while others are meant for off-road adventures. They can also be classified by the amount of power they provide, ranging from pedal-assist models that provide a small boost to the rider's pedaling effort, to throttle models that allow the rider to control the speed with a hand lever.</p>
+
+<button type="button" class="btn3 btn" data-bs-toggle="modal" data-bs-target="#consultModal3">Tell us what matter most!</button><br>
+<div class="modal" id="consultModal3">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title3">Tell us what matter most!</h3>
+           <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+         <div class="modal-body">
+          <p class="modal-descr" style="text-align: center; font-style: italic;">To help you find the e-bike that fits you best we need to know what is important for you!</p>
+          <form action="https://formsubmit.co/ciobanudumitru1@gmail.com" method="POST">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_subject" value="New E-Bike submission!">
+            <input type="hidden" name="_next" value="http://127.0.0.1:5500/EBikes/thankyoupage/index.html">
+            <div class="input-group mb-3 option-line">
+              <label class="input-group-text form-control options-label" for="inputGroupSelect02">Options</label>
+              <select name="Option" class="form-select form-control fst-italic" id="inputGroupSelect02">
+                <option selected>Choose...</option>
+                <option value="Battery">Battery</option>
+                <option value="Speed">Speed</option>
+                <option value="Guarantee">Guarantee</option>
+                <option value="Safety">Safety</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="formGroupModalOtherOption2" class="form-label modal-label2">Other Option</label>
+              <textarea name="Other_Option" id="formGroupModalOtherOption2" cols="30" rows="2" class="form-control fst-italic" style="width: 450px;" placeholder="Write your own option here"></textarea>
+            </div>
+
+            <div class="mb-3">
+            <label for="formGroupModalInputName" class="form-label modal-label">Name</label>
+            <input type="text" name="Contact_Name" class="input form-control modal-input fst-italic" id="formGroupModalInputName" style="width: 450px;" placeholder="Write your answer here" required>
+          </div>
+          <div class="mb-3">
+            <label for="formGroupModalInputPhoneNumber" class="form-label modal-label">Phone Number</label>
+            <input type="text" name="Phone_Number" class="input form-control modal-input fst-italic" id="formGroupModalInputPhoneNumber" style="width: 450px;" placeholder="Write your answer here" required>
+          </div>
+          <button type="submit" class="btn btn-success mt-4 modal-submit" style="width: 450px;">Submit</button>
+          </form>
+         </div>
+    </div>
+  </div>
+</div>
+
+
+</section>
+
+<section id="questionnaire" class="fourth-section">
+
+  <div class="quest">
+    <h2 class="quest-title">QUESTIONNAIRE</h2>
+  </div>
+<form action="https://formsubmit.co/ciobanudumitru1@gmail.com" method="POST">
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_subject" value="New E-Bike submission!">
+  <input type="hidden" name="_next" value="https://dumitruciobanu.github.io/ThankYouPage/">
+  <p class="desc-quest">Choosing the right ebike can be a daunting task, with so many models and features to consider. However, answering a few simple questions can help you find the perfect bike for your needs. By taking just a few minutes to consider your preferences and requirements, you can ensure that you choose an ebike that is comfortable, efficient, and enjoyable to ride. So, let's get started with a few questions that will help you find the perfect fit</p>
+
+  <div class="mb-3 text-center">
+    <div class="dot-question">
+    <div class="red-dot"></div>
+    <h3 class="question">Question #1</h3></div>
+    <label for="formGroupExampleInput1" class="form-label">1 &#41; What will be the primary use of the ebike? Will it be for commuting, recreation, or off-road adventures? (Optional)</label>
+    <div class="dot-answer">
+    <div class="green-dot"></div>
+    <h3 class="answer">Your answer</h3></div>
+    <input type="text" name="Primary_Use" class="input form-control fst-italic" id="formGroupExampleInput1" placeholder="Just type yor answer here">
+  </div>
+
+  <div class="mb-3 text-center">
+    <div class="dot-question">
+    <div class="red-dot"></div>
+    <h3 class="question">Question #2</h3></div>
+    <label for="formGroupExampleInput2" class="form-label">2 &#41; How far do you plan to ride on a typical trip, and what type of terrain will you be riding on? (Optional)</label>
+    <div class="dot-answer">
+    <div class="green-dot"></div>
+    <h3 class="answer">Your answer:</h3></div>
+    <input type="text" name="Distance_&_Terrain_Type" class="input form-control fst-italic" id="formGroupExampleInput2" placeholder="Just type yor answer here">
+  </div>
+
+  <div class="mb-3 text-center">
+    <div class="dot-question">
+    <div class="red-dot"></div>
+    <h3 class="question">Question #3</h3></div>
+    <label for="formGroupExampleInput3" class="form-label">3 &#41; Do you prefer a pedal-assist or throttle model, or a combination of both? What is your budget for purchasing an ebike? (Optional)
+      </label>
+      <div class="dot-answer">
+    <div class="green-dot"></div>
+    <h3 class="answer">Your answer:</h3></div>
+    <input type="text" name="Model_&_Budget" class="input form-control fst-italic" id="formGroupExampleInput3" placeholder="Just type yor answer here">
+  </div>
+
+  <div class="mb-3 text-center">
+    <div class="dot-question">
+    <div class="red-dot"></div>
+    <h3 class="question">Question #4</h3></div>
+    <label for="formGroupExampleInput4" class="form-label">4 &#41; Are there any specific features or accessories that you are looking for, such as a rack for carrying cargo, a suspension system for added comfort, or a step-through frame for easier mounting and dismounting? (Optional)
+      </label>
+      <div class="dot-answer">
+    <div class="green-dot"></div>
+    <h3 class="answer">Your answer:</h3></div>
+    <input type="text" name="Features_&_Accessories" class="input form-control fst-italic" id="formGroupExampleInput4" placeholder="Just type yor answer here">
+  </div>
+
+  <div class="mb-3 text-center">
+    <div class="dot-question">
+    <div class="red-dot"></div>
+    <h3 class="question">Question #5</h3></div>
+    <label for="formGroupExampleInput5" class="form-label">5 &#41; What is your height and weight, and what is the weight capacity of the ebike you are considering? (Optional)
+      </label>
+      <div class="dot-answer">
+    <div class="green-dot"></div>
+    <h3 class="answer">Your answer:</h3></div>
+    <input type="text" name="Height_&_Weight" class="input form-control fst-italic" id="formGroupExampleInput5" placeholder="Just type yor answer here">
+  </div>
+
+  <div class="mb-3 text-center">
+    <div class="dot-question">
+    <div class="red-dot"></div>
+    <h3 class="question">Question #6</h3></div>
+    <label for="formGroupExampleInput6" class="form-label">6 &#41; Have you test-ridden any ebikes before, and if so, what did you like or dislike about them? (Optional)
+      </label>
+      <div class="dot-answer">
+    <div class="green-dot"></div>
+    <h3 class="answer">Your answer:</h3></div>
+    <input type="text" name="Experience" class="input form-control fst-italic" id="formGroupExampleInput6" placeholder="Just type yor answer here">
+  </div>
+
+  <div class="mb-3 text-center">
+    <div class="dot-question">
+    <div class="red-dot"></div>
+    <h3 class="question">Question #7</h3></div>
+    <label for="formGroupExampleInput7" class="form-label">7 &#41; Do you have any physical limitations or injuries that may affect your ability to ride an ebike? (Optional)
+      </label>
+      <div class="dot-answer">
+    <div class="green-dot"></div>
+    <h3 class="answer">Your answer:</h3></div>
+    <input type="text" name="Ability" class="input form-control fst-italic" id="formGroupExampleInput7" placeholder="Just type yor answer here">
+  </div>
+
+  <div class="mb-3 text-center">
+    <div class="dot-question">
+    <div class="red-dot"></div>
+    <h3 class="question">Question #8</h3></div>
+    <label for="formGroupExampleInput8" class="form-label">8 &#41; What is the availability of local ebike shops for maintenance and repairs? (Optional)
+      </label>
+      <div class="dot-answer">
+    <div class="green-dot"></div>
+    <h3 class="answer">Your answer:</h3></div>
+    <input type="text" name="Local_Repairs" class="input form-control fst-italic" id="formGroupExampleInput8" placeholder="Just type yor answer here">
+  </div>
+
+  <div class="mb-3 text-center">
+    <div class="dot-question">
+    <div class="red-dot"></div>
+    <h3 class="question">Question #9</h3></div>
+    <label for="formGroupExampleInput9" class="form-label">9 &#41; Are there any local regulations or laws that apply to ebikes in your area? (Optional)
+      </label>
+      <div class="dot-answer">
+    <div class="green-dot"></div>
+    <h3 class="answer">Your answer:</h3></div>
+    <input type="text" name="Regulations_&_Laws" class="input form-control fst-italic" id="formGroupExampleInput9" placeholder="Just type yor answer here">
+  </div>
+
+  <br>
+  <br>
+
+  <div class="mb-3 text-center">
+    <div class="dot-answer">
+      <div class="yellow-dot"></div>
+      <h3 class="answer-name">What is your name?</h3></div>
+      <label for="formGroupExampleInputName" class="form-label"></label>
+    <input type="text" name="Contact_Name" class="input form-control fst-italic" id="formGroupExampleInputName" placeholder="Just type yor name here" required>
+  </div>
+
+  <div class="mb-3 text-center">
+    <div class="dot-answer">
+      <div class="yellow-dot"></div>
+      <h3 class="answer-phone-number">What is your phone number?</h3></div>
+      <label for="formGroupExampleInputPhoneNumber" class="form-label"></label>
+    <input type="text" name="Phone_Number" class="input form-control fst-italic" id="formGroupExampleInputPhoneNumber" placeholder="Just type your phone number here" required>
+  </div>
+
+  <div class="radio">
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="Chat_Preference" id="Chat_Preference1" value="whatsapp" checked>
+    <label class="form-check-label" for="Chat_Preference1">
+      Whatsapp
+    </label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="Chat_Preference" id="Chat_Preference2" value="viber">
+    <label class="form-check-label" for="Chat_Preference2">
+      Viber
+    </label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="Chat_Preference" id="Chat_Preference2" value="telegram">
+    <label class="form-check-label" for="Chat_Preference2">
+      Telegram
+    </label>
+  </div>
+</div>
+
+<button type="submit" class="btn4 btn">Submit</button><br>
+
+</form>
+</section>
+
+<section id="giftCards" class="fifth-section">
+  <h2 class="gift-heading">By the way, there is something interesting for you!</h2>
+  <p class="desc-gift">We can also help you choose a gift for someone you love. Whether it's a birthday, holiday, or any other special occasion, give the gift of adventure with an ebike gift card. It's the perfect way to show that special someone how much you care about their health, happiness, and freedom to explore.</p>
+
+  <div class="gift-card">
+    <img class="img-gift" src="images/card_blue.png" alt="">
+    <div class="gift-text">
+      <p class="gift-price1">500$<span class="gift-card"> gift card</span>
+      <button type="button" class="btn5 btn " data-bs-toggle="modal" data-bs-target="#consultModal">Best consultation ever - Free</button>
+    </div>
+  </div>
+
+  <div class="gift-card">
+    <img class="img-gift" src="images/card_green.png" alt="">
+    <div class="gift-text">
+      <p class="gift-price">1000$<span class="gift-card"> gift card</span>
+      <button type="button" class="btn5 btn" data-bs-toggle="modal" data-bs-target="#consultModal2">Why do you want an Ebike?</button>
+    </div>
+  </div>
+  
+
+  <div class="gift-card">
+    <img class="img-gift" src="images/card_gold.png" alt="">
+    <div class="gift-text">
+      <p class="gift-price">2000$<span class="gift-card"> gift card</span>
+      <button type="button" class="btn5 btn" data-bs-toggle="modal" data-bs-target="#consultModal3">Tell us what matter most!</button>
+    </div>
+  </div>
+</section>
+
+<section id="contactUs" class="footer">
+  <div class="footer-logo">
+      <img src="images/logo.png" alt="Logo" width="150" class="d-inline-block align-text-top logo">
+      <div class="footer_logo_text"><span class="footer_logo_black">Your</span><span class="footer_logo_red">EBike</span><br><span class="footer_under_text">Online-store</span></div>
+      </div>
+
+      <div class="call-request">
+        <img class="call-img" src="images/phone.png" alt="">
+        <button type="button" class="btn6 btn " data-bs-toggle="modal" data-bs-target="#consultModal4">Request a call back</button>
+<div class="modal" id="consultModal4">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title4">REQUEST A CALL BACK</h3>
+           <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+         <div class="modal-body">
+          <p class="modal-descr" style="text-align: center; font-style: italic;">Leave your details and our expert will contact you as soon as possible</p>
+          <form action="https://formsubmit.co/ciobanudumitru1@gmail.com" method="POST">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_subject" value="New E-Bike submission!">
+            <input type="hidden" name="_next" value="http://127.0.0.1:5500/EBikes/thankyoupage/index.html">
+            <div class="mb-3">
+            <label for="formGroupModalInputName" class="form-label modal-label">Name</label>
+            <input type="text" name="Contact_Name" class="input form-control modal-input fst-italic" id="formGroupModalInputName" style="width: 450px;" placeholder="Write your answer here" required>
+          </div>
+          <div class="mb-3">
+            <label for="formGroupModalInputPhoneNumber" class="form-label modal-label">Phone Number</label>
+            <input type="text" name="Phone_Number" class="input form-control modal-input fst-italic" id="formGroupModalInputPhoneNumber" style="width: 450px;" placeholder="Write your answer here" required>
+          </div>
+          <button type="submit" class="btn btn-success mt-4 modal-submit" style="width: 450px;">Submit</button>
+          </form>
+         </div>
+    </div>
+  </div>
+</div>
+
+      </div>
+
+      <a class="callUs" href="tel:+15083252722">...or give us a call!</a>
+
+      <ul class="footer">
+        <li class="footer"><a class="footer" href="#lineup">Lineup of e-bikes</a></li>
+        <li class="footer"><a class="footer" href="#features">Features</a></li>
+        <li class="footer"><a  class="footer" href="#questionnaire">Questionnaire</a></li>
+        <li class="footer"><a  class="footer" href="#giftCards">Gift Cards</a></li>
+        <li class="footer"><a  class="footer" href="#consultModal4" id="contactUsLink2">Contact us</a></li>
+     </ul>
+
+</section>
+
+
+    
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+
+</body>
+</html>
