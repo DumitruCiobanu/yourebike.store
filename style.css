@@ -65,7 +65,7 @@
 
 body {
   background-color: #cccccc;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   width: 100vw;
   height: auto;
 }
@@ -75,12 +75,31 @@ body {
 .welcome-section {
   width: 100vw;
 }
+.container {
+  padding: 0 20px;
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 100%;
+}
+.container1 {
+  padding: 0px 0px;
+  margin: 0 auto;
+  max-width: 1440px;
+  width: 100%;
+}
+.container4 {
+  padding: 0px 0px;
+  margin: 0 auto;
+  max-width: 1025px;
+  width: 100%;
+}
 h1 {
   text-align: left;
   margin-left: 90px;
   margin-top: 140px;
   font-family: "Neometric-HeavyItalic";
   font-size: 2.5em;
+  max-width: 600px;
 }
 span.red {
   color: #cc5253;
@@ -92,10 +111,11 @@ span.red-e {
 }
 .navbar-brand {
   display: flex;
+  margin-left: 80px;
 }
 .logo {
   margin-top: 40px;
-  margin-left: 80px;
+  margin-left: 10px;
   color: #cc5253;
 }
 .logo_text {
@@ -117,7 +137,7 @@ span.under_text {
   color: #4b4a4a;
 }
 ul.nav {
-  margin-right: 80px;
+  margin-right: 110px;
 }
 ul > li {
   list-style: none;
@@ -148,7 +168,7 @@ nav {
 .red-figure {
   position: fixed;
   top: 0;
-  right: 0;
+  right: 0px;
   height: 768px;
   width: 550px;
   clip-path: polygon(37% 0, 100% 0, 100% 100%, 0 100%);
@@ -169,7 +189,7 @@ nav {
   transform: rotateY(180deg);
   margin-left: 55%;
   margin-top: -300px;
-  position: relative;
+  position: absolute;
 }
 .descr-list1 {
   display: flex;
@@ -220,14 +240,14 @@ dt {
   color: #cccccc;
   margin-left: 85px;
   position: relative;
-  top: -150px;
+  top: -140px;
 }
 
 /* Second-section */
 
 .second-section {
-  height: auto;
   width: 100vw;
+  height: 1243px;
 }
 div.lineup {
   background-color: #b9b9b9;
@@ -255,9 +275,10 @@ p.desc-bikes {
 .list-bike {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
-  margin: 70px 150px;
-  gap: 100px;
+  justify-content: space-between;
+  margin: 70px auto;
+  gap: 85px;
+  max-width: 1000px;
 }
 .bike-list {
   display: flex;
@@ -315,6 +336,7 @@ p.desc-bikes2 {
   padding-bottom: 50px;
   font-family: "Neometric-Heavy";
   font-size: 2.5em;
+  max-width: 600px;
 }
 .list-features {
   display: flex;
@@ -369,7 +391,6 @@ div.quest {
   align-items: center;
   padding: 10px;
   border-radius: 40px 10px 40px 10px;
-  margin-top: 43px;
 }
 .quest-title {
   text-align: center;
@@ -403,8 +424,9 @@ p.desc-quest {
 .question {
   font-family: "Neometric-Heavy";
   padding-top: 50px;
-  margin-left: -700px;
+  margin-left: 135px;
   font-size: 1.75em;
+  max-width: 200px;
 }
 .form-label {
   padding-top: 15px;
@@ -436,9 +458,10 @@ p.desc-quest {
 .answer {
   font-family: "Neometric-Heavy";
   padding-top: 10px;
-  margin-left: -700px;
+  margin-left: 140px;
   padding-bottom: 15px;
   font-size: 1.75em;
+  max-width: 200px;
 }
 .input {
   display: flex;
@@ -447,16 +470,18 @@ p.desc-quest {
   padding: 20px;
 }
 .answer-name {
-  margin-left: -585px;
+  margin-left: 125px;
   font-family: "Neometric-Heavy";
   margin-top: 10px;
   font-size: 1.75em;
+  max-width: 320px;
 }
 .answer-phone-number {
-  margin-left: -460px;
+  margin-left: 100px;
   font-family: "Neometric-Heavy";
   margin-top: 10px;
   font-size: 1.75em;
+  max-width: 500px;
 }
 .radio {
   display: flex;
@@ -499,7 +524,8 @@ p.desc-quest {
 }
 .gift-heading {
   text-align: center;
-  margin: 0 auto;
+  margin: auto;
+  max-width: 1050px;
   padding-top: 80px;
   font-family: "Neometric-Heavy";
   font-size: 2.5em;
@@ -589,11 +615,11 @@ span.footer_under_text {
   display: flex;
   justify-content: center;
   padding-top: 60px;
-  margin-left: -73px;
+  margin: auto;
+  max-width: 470px;
 }
 .call-img {
   width: 50px;
-  margin-left: 65px;
   margin-bottom: 10px;
 }
 .btn6 {
@@ -623,6 +649,8 @@ span.footer_under_text {
 ul.footer {
   display: flex;
   justify-content: center;
+  max-width: 1100px;
+  margin: auto;
 }
 ul.footer > li.footer {
   list-style: none;
@@ -728,9 +756,6 @@ span.free {
 @media (min-width: 1281px) and (max-width: 1440px) {
   /* first-section */
 
-  ul.nav {
-    margin-right: 105px;
-  }
   ul > li {
     padding-left: 0px;
   }
@@ -742,7 +767,7 @@ span.free {
     margin-left: 53%;
   }
   .descr-list1 {
-    margin-top: 20px;
+    margin-top: 65px;
   }
   .descr-list2 {
     margin-top: 40px;
@@ -756,9 +781,10 @@ span.free {
   .list-bike {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin: 70px 200px;
-    gap: 100px;
+    justify-content: space-between;
+    margin: 70px auto;
+    gap: 85px;
+    max-width: 1000px;
   }
   .bike-list {
     display: flex;
@@ -776,35 +802,39 @@ span.free {
   /* Third Section */
 
   .list-features {
-    margin: 70px 90px;
+    margin: 70px 0px;
   }
 
   /* Fourth-section */
-
+  div.quest {
+    margin-top: 43px;
+  }
   .radio {
     padding: 20px;
   }
 }
 
-@media (min-width: 1025px) and (max-width: 1280px) {
+@media (min-width: 1201px) and (max-width: 1280px) {
   /* first-section */
   h1 {
     text-align: left;
     margin-left: 90px;
     margin-top: 100px;
     font-size: 1.9em;
+    max-width: 430px;
   }
   ul.nav {
     position: absolute;
-    right: 0;
+    right: -20px;
     margin-top: 170px;
   }
   ul > li {
     margin-top: 20px;
   }
   .red-figure {
-    height: 768px;
+    height: 735px;
     width: 520px;
+    right: 0;
   }
   .description {
     width: 380px;
@@ -812,13 +842,13 @@ span.free {
   }
   .main-bike {
     width: 30em;
-    margin-left: 48%;
+    margin-left: 46%;
     margin-top: -240px;
   }
   .descr-list1 {
     gap: 50px;
-    margin-right: 285px;
-    margin-top: 40px;
+    margin-right: 280px;
+    margin-top: 100px;
   }
   .descr-list2 {
     gap: 55px;
@@ -828,9 +858,15 @@ span.free {
   }
 
   /* Second-section */
-
+.second-section{
+  height: 1213px;
+}
   div.lineup {
     margin-top: 15px;
+  }
+  .list-bike {
+    gap: 85px;
+    max-width: 940px;
   }
   .list-bike-img {
     height: 115px;
@@ -838,48 +874,77 @@ span.free {
 
   /* Third Section */
 
+  .list-features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 70px 0px;
+    gap: 100px;
+  }
   .feat-img {
     display: block;
-    width: 12em;
+    width: 9em;
     margin: auto;
   }
   .feat-title {
     text-align: center;
     margin: auto;
+    font-size: 1.8em;
   }
   .feat-desc {
-    width: 720px;
+    width: 383px;
     text-align: center;
   }
 
   /* Fourth-section */
-
+  div.quest {
+    margin-top: 43px;
+  }
+  p.desc-quest {
+    display: block;
+    margin: auto;
+    width: 757px;
+    text-align: center;
+    margin-top: 50px;
+    font-family: "Neometric-Light";
+    font-size: 1em;
+  }
   .form-control {
-    width: 50em;
+    width: 700px;
   }
   .red-dot {
-    margin-left: -780px;
+    margin-left: -682px;
+  }
+  .dot-question {
+    max-width: auto;
   }
   .question {
-    margin-left: -565px;
+    font-family: "Neometric-Heavy";
+    padding-top: 50px;
+    margin-left: 250px;
+    font-size: 1.75em;
+    max-width: 200px;
   }
   .form-label {
-    width: 800px;
+    width: 700px;
   }
   .green-dot {
-    margin-right: 780px;
+    margin-right: 682px;
   }
   .yellow-dot {
-    margin-right: 780px;
+    margin-right: 682px;
+  }
+  .dot-answer {
+    max-width: auto;
   }
   .answer {
-    margin-left: -560px;
+    margin-left: 250px;
   }
   .answer-name {
-    margin-left: -460px;
+    margin-left: 242px;
   }
   .answer-phone-number {
-    margin-left: -330px;
+    margin-left: 217px;
   }
 
   /* Fifth-Section  */
@@ -890,272 +955,190 @@ span.free {
   }
 }
 
-@media (min-width: 769px) and (max-width: 1024px) {
+/* footer-section */
+
+.footer-logo {
+  display: flex;
+  justify-content: center;
+  color: #cc5253;
+  margin: auto;
+  max-width: auto;
+}
+@media (min-width: 1025px) and (max-width: 1200px) {
   /* first-section */
 
   .navbar-brand {
-    margin-top: -150px;
+    margin-left: 80px;
+    margin-top: -120px;
   }
   h1 {
     margin-top: -50px;
     font-size: 1.9em;
   }
   ul.nav {
-    margin-right: -130px;
     flex-direction: column;
     line-height: 10px;
+    margin-right: 60px;
   }
   ul > li {
     margin-top: 40px;
   }
   ul > li:nth-child(2) {
-    margin-left: -10px;
+    margin-left: -11px;
   }
   ul > li:nth-child(3) {
-    margin-left: -20px;
+    margin-left: -22px;
   }
   ul > li:nth-child(4) {
-    margin-left: -30px;
+    margin-left: -33px;
   }
   ul > li:nth-child(5) {
-    margin-left: -40px;
+    margin-left: -44px;
   }
   .red-figure {
-    height: 847px;
+    height: 765px;
     width: 430px;
-    margin-right: -172px;
   }
   .description {
     width: 400px;
   }
   .main-bike {
-    width: 29em;
-    margin-left: 53%;
-    margin-top: -120px;
+    width: 27em;
+    margin-left: 45%;
+    margin-top: -150px;
   }
   .descr-list1 {
     gap: 100px;
-    margin-right: 15px;
+    margin-right: 180px;
+    margin-top: 160px;
   }
   .descr-list2 {
     gap: 110px;
-    margin-right: 70px;
+    margin-right: 240px;
   }
   .btn1 {
-    top: -300px;
+    top: -150px;
   }
 
   /* Second-section */
-
+.second-section{
+  height: 1193px;
+}
   div.lineup {
-    background-color: #b9b9b9;
-    margin: auto;
-    padding: 10px;
-    border-radius: 40px 10px 40px 10px;
-    margin-top: 15px;
-  }
-  div > h2 {
-    text-align: center;
-    font-family: "Neometric-Heavy";
-    font-size: 2.2em;
-    margin-top: 15px;
+    max-width: 620px;
   }
   p.desc-bikes {
-    display: block;
-    margin: auto;
     width: 600px;
-    text-align: center;
     margin-top: 50px;
-    font-family: "Neometric-Light";
-    font-size: 1em;
   }
   .list-bike {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin: 70px 150px;
-    gap: 100px;
-  }
-  .bike-list {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .list-bike-img {
-    height: 115px;
-    margin-bottom: 20px;
-    margin-top: 40px;
-  }
-  .list-desc-bike {
-    margin-left: 0px;
-    font-size: 1.2em;
-    font-family: "Neometric-Light";
-    font-weight: bolder;
-  }
-  .list-price-bike {
-    font-family: "Neometric-Light";
-    font-size: 1em;
-    margin-left: 0px;
-  }
-  p.desc-bikes2 {
-    display: block;
-    margin: auto;
-    width: 550px;
-    text-align: center;
-    margin-top: 50px;
-    font-family: "Neometric-Light";
-    font-size: 1em;
-  }
-  .btn2 {
-    display: block;
-    padding: 20px;
-    border-radius: 15px;
-    border: none;
-    background-color: #cc5253;
-    font-family: "Neometric-ExtraBold";
-    color: #cccccc;
-    margin: 60px auto;
+    margin: 70px auto;
+    gap: 42px;
+    max-width: 820px;
   }
 
   /* Third Section */
 
-  .features-title {
-    text-align: center;
-    margin: 0 auto;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    font-family: "Neometric-Heavy";
-    font-size: 2.5em;
-  }
   .list-features {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    margin: 70px 150px;
-    gap: 100px;
+    margin: 70px 0px;
+    gap: 20px;
   }
   .feat-img {
-    width: 12.5em;
-    margin-left: 130px;
+    display: block;
+    width: 9em;
+    margin: auto;
   }
   .feat-title {
-    font-family: "Neometric-ExtraBold";
-    font-size: 2em;
     text-align: center;
-    margin-left: -30px;
+    margin: auto;
+    font-size: 1.8em;
   }
   .feat-desc {
-    font-family: "Neometric-Light";
-    font-size: 1em;
-    width: 480px;
-    margin-top: 30px;
+    width: 383px;
+    text-align: center;
   }
   p.feat-desc2 {
-    display: block;
-    margin: auto;
-    width: 600px;
-    text-align: center;
-    margin-top: 50px;
-    font-family: "Neometric-Light";
-    font-size: 1em;
-  }
-  .btn3 {
-    display: block;
-    padding: 20px;
-    border-radius: 15px;
-    border: none;
-    background-color: #cccccc;
-    font-family: "Neometric-ExtraBold";
-    color: #ca5356;
-    margin: 60px auto;
-    margin-bottom: 100px;
+    width: 763px;
   }
 
   /* Fourth-section */
 
   div.quest {
-    background-color: #b9b9b9;
-    margin-left: 190px;
-    margin-right: 190px;
-    align-items: center;
-    padding: 10px;
-    border-radius: 40px 10px 40px 10px;
     margin-top: 43px;
-  }
-  .quest-title {
-    text-align: center;
-    font-family: "Neometric-Heavy";
-    font-size: 2.2em;
-    margin-top: 15px;
   }
   p.desc-quest {
     display: block;
     margin: auto;
-    width: 600px;
+    width: 757px;
     text-align: center;
     margin-top: 50px;
     font-family: "Neometric-Light";
     font-size: 1em;
   }
   .form-control {
-    width: 38em;
+    width: 700px;
   }
   .red-dot {
-    margin-left: -580px;
+    margin-left: -682px;
+  }
+  .dot-question {
+    max-width: auto;
   }
   .question {
-    margin-left: -360px;
+    font-family: "Neometric-Heavy";
+    padding-top: 50px;
+    margin-left: 183px;
+    font-size: 1.75em;
+    max-width: 200px;
   }
   .form-label {
-    width: 600px;
+    width: 700px;
   }
   .green-dot {
-    margin-right: 580px;
+    margin-right: 682px;
   }
   .yellow-dot {
-    margin-right: 580px;
+    margin-right: 682px;
+  }
+  .dot-answer {
+    max-width: auto;
   }
   .answer {
-    margin-left: -350px;
+    margin-left: 186px;
   }
   .answer-name {
-    margin-left: -250px;
+    margin-left: 175px;
   }
   .answer-phone-number {
-    margin-left: -120px;
+    margin-left: 150px;
   }
   /* Fifth-Section  */
-
+  .gift-heading {
+    max-width: 800px;
+  }
   .desc-gift {
-    width: 600px;
-    margin-top: 60px;
+    width: 629px;
   }
   div.gift-card {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-bottom: 30px;
-  }
-  .img-gift {
-    width: 15em;
-    padding-top: 100px;
-    margin-left: -30px;
+    gap: 0px;
   }
   p.gift-price {
     margin-left: -50px;
+    font-size: 3em;
   }
   .gift-price1 {
     padding-left: 222px;
-    font-size: 2em;
+    font-size: 3em;
   }
   .gift-price {
     padding-left: 260px;
     font-size: 2em;
   }
   .btn5 {
-    width: 370px;
-    height: 50px;
+    width: 400px;
     margin-left: -370px;
     font-size: 0.5em;
   }
@@ -1165,9 +1148,577 @@ span.free {
   ul.footer {
     display: flex;
     justify-content: center;
+    max-width: 1000px;
   }
   ul.footer > li.footer {
     padding: 10px;
     margin-bottom: 20px;
   }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+ /* first-section */
+
+ .navbar-brand {
+  margin-left: 80px;
+  margin-top: -120px;
+ 
+}
+.logo {
+  margin-top: 25px;
+  margin-left: 10px;
+  color: #cc5253;
+  width: 130px;
+  height: 75px;
+
+}
+.logo_text {
+  font-family: "Neometric-Heavy";
+  margin-top: 70px;
+  margin-left: 15px;
+  line-height: 20px;
+}
+span.logo_black {
+  font-size: 1.5em;
+}
+span.logo_red {
+  font-size: 1.5em;
+  color: #cc5253;
+}
+span.under_text {
+  font-family: "Neometric-regular";
+  margin-left: 4px;
+  color: #4b4a4a;
+  font-size: 1em;
+}
+h1 {
+  margin-top: -61px;
+  font-size: 1.6em;
+}
+ul.nav {
+  flex-direction: column;
+  line-height: 10px;
+  margin-right: 20px;
+}
+ul > li {
+  margin-top: 40px;
+}
+ul > li:nth-child(2) {
+  margin-left: -10px;
+}
+ul > li:nth-child(3) {
+  margin-left: -20px;
+}
+ul > li:nth-child(4) {
+  margin-left: -29px;
+}
+ul > li:nth-child(5) {
+  margin-left: -38px;
+}
+.red-figure {
+  height: 792px;
+  width: 360px;
+}
+.description {
+  width: 318px;
+}
+.main-bike {
+  width: 26em;
+  margin-left: 43%;
+  margin-top: -130px;
+}
+.descr-list1 {
+  gap: 100px;
+  margin-right: 120px;
+  margin-top: 190px;
+}
+.descr-list2 {
+  gap: 110px;
+  margin-right: 180px;
+}
+.dt1, 
+.dt2, 
+.dt3, 
+.dt4{
+font-size: 1.9em;
+}
+.btn1 {
+  top: -270px;
+  font-size: 0.8em;
+}
+
+/* Second-section */
+.second-section{
+  height: 1671px;
+}
+div.lineup {
+  max-width: 400px;
+  font-size: 0.8em;
+}
+p.desc-bikes {
+  width: 584px;
+  margin-top: 50px;
+}
+.list-bike {
+  margin: 70px auto;
+  gap: 130px;
+  max-width: 530px;
+  justify-content: space-evenly;
+}
+.btn2{
+  font-size: 0.8em;
+}
+
+/* Third Section */
+
+.list-features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 40px 0px;
+  gap: 70px;
+}
+.feat-img {
+  display: block;
+  width: 9em;
+  margin: auto;
+}
+.feat-title {
+  text-align: center;
+  margin: auto;
+  font-size: 1.8em;
+}
+.feat-desc {
+  width: 383px;
+  text-align: center;
+}
+p.feat-desc2 {
+  width: 584px;
+}
+.btn3{
+  font-size: 0.8em;
+}
+
+/* Fourth-section */
+.container4 {
+  padding: 0px 0px;
+  margin: 0 auto;
+  max-width: 769px;
+  width: 100%;
+}
+div.quest {
+  margin-top: 43px;
+}
+p.desc-quest {
+  width: 560px;
+}
+.form-control {
+  width: 600px;
+}
+.red-dot {
+  margin-left: -585px;
+}
+.dot-question {
+  max-width: auto;
+}
+.question {
+  font-family: "Neometric-Heavy";
+  padding-top: 50px;
+  margin-left: 100px;
+  font-size: 1.75em;
+  max-width: 200px;
+}
+.form-label {
+  width: 600px;
+}
+.green-dot {
+  margin-right: 585px;
+}
+.yellow-dot {
+  margin-right: 585px;
+}
+.dot-answer {
+  max-width: auto;
+}
+.answer {
+  margin-left: 103px;
+}
+.answer-name {
+  margin-left: 100px;
+}
+.answer-phone-number {
+  margin-left: 75px;
+}
+.btn4{
+  font-size: 1em;
+}
+/* Fifth-Section  */
+.gift-heading {
+  max-width: 600px;
+  font-size: 2.3em;
+}
+.desc-gift {
+  width: 629px;
+}
+div.gift-card {
+  gap: 0px;
+}
+.img-gift{
+  width: 14em;
+}
+p .gift-card {
+  font-family: "Neometric-Medium";
+  font-size: 0.4em;
+}
+p.gift-price {
+  margin-left: -50px;
+  font-size: 2.5em;
+}
+.gift-price1 {
+  padding-left: 130px;
+  font-size: 2.5em;
+}
+.gift-price {
+  padding-left: 160px;
+  font-size: 2.5em;
+}
+.btn5 {
+  width: 250px;
+  margin-left: -240px;
+  font-size: 0.3em;
+}
+
+/* Footer */
+
+.logo {
+    margin-top: 40px;
+}
+.footer_logo_text {
+  font-family: "Neometric-Heavy";
+  margin-top: 76px;
+  margin-left: 15px;
+  line-height: 20px;
+}
+span.footer_logo_black {
+  font-size: 1.5em;
+  color: #fff;
+}
+span.footer_logo_red {
+  font-size: 1.5em;
+  color: #cc5253;
+}
+span.footer_under_text {
+  font-family: "Neometric-regular";
+  margin-left: 4px;
+  color: #fff;
+  font-size: 1em;
+}
+ul.footer {
+  display: flex;
+  justify-content: center;
+  max-width: 700px;
+}
+ul.footer > li.footer {
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 0.9em;
+}
+  
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+ /* first-section */
+ .container1 {
+  padding: 0px 0px;
+  margin: 0 auto;
+  max-width: 768px;
+  width: 100%;
+}
+.navbar-brand {
+  margin-left: 21px;
+  margin-top: -120px;
+}
+.logo {
+  margin-top: 131px;
+  margin-left: 10px;
+  color: #cc5253;
+  width: 130px;
+  height: 75px;
+}
+.logo_text {
+  font-family: "Neometric-Heavy";
+  margin-top: 160px;
+  margin-left: 15px;
+  line-height: 20px;
+}
+span.logo_black {
+  font-size: 1.5em;
+}
+span.logo_red {
+  font-size: 1.5em;
+  color: #ccc;
+}
+span.under_text {
+  font-family: "Neometric-regular";
+  margin-left: 4px;
+  color: #4b4a4a;
+  font-size: 1em;
+}
+h1 {
+  margin-top: -61px;
+  font-size: 1.6em;
+  z-index: 2;
+}
+ul.nav {
+  flex-direction: row;
+  line-height: 10px;
+  margin-right: 0px;
+  margin-left: 30px;
+  margin-top: 0px;
+}
+ul > li {
+  margin-top: 40px;
+}
+ul > li:nth-child(2) {
+  margin-left: -10px;
+}
+ul > li:nth-child(3) {
+  margin-left: -20px;
+}
+ul > li:nth-child(4) {
+  margin-left: -29px;
+}
+ul > li:nth-child(5) {
+  margin-left: -38px;
+}
+.red-figure {
+  height: 792px;
+  width: 300px;
+}
+.description {
+  width: 318px;
+}
+.main-bike {
+  width: 20em;
+  margin-left: 0%;
+  margin-top: -130px;
+}
+.descr-list1 {
+  gap: 100px;
+  margin-right: 120px;
+  margin-top: 190px;
+}
+.descr-list2 {
+  gap: 110px;
+  margin-right: 180px;
+}
+.dt1, 
+.dt2, 
+.dt3, 
+.dt4{
+font-size: 1.9em;
+}
+.btn1 {
+  top: -270px;
+  font-size: 0.8em;
+}
+
+/* Second-section */
+.second-section{
+  height: 1671px;
+}
+div.lineup {
+  max-width: 400px;
+  font-size: 0.7em;
+  margin: 0 60px;
+}
+p.desc-bikes {
+  width: 310px;
+  margin-top: 50px;
+}
+p.desc-bikes2 {
+  width: 300px;
+  margin-top: 50px;
+}
+.list-bike {
+  margin: 70px auto;
+  gap: 130px;
+  max-width: 530px;
+  justify-content: space-evenly;
+}
+.btn2{
+  font-size: 0.8em;
+}
+
+/* Third Section */
+.third-section{
+  max-width: 768px;
+}
+.list-features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 40px 0px;
+  gap: 70px;
+}
+.feat-img {
+  display: block;
+  width: 9em;
+  margin: auto;
+}
+.feat-title {
+  text-align: center;
+  margin: auto;
+  font-size: 1.8em;
+}
+.feat-desc {
+  width: 383px;
+  text-align: center;
+}
+p.feat-desc2 {
+  width: 300px;
+}
+.btn3{
+  font-size: 0.8em;
+}
+
+/* Fourth-section */
+.container4 {
+  padding: 0px 0px;
+  margin: 0 auto;
+  max-width: 769px;
+  width: 100%;
+}
+div.quest {
+  margin-top: 43px;
+  margin: 0 60px;
+}
+.quest-title{
+  font-size: 1.6em;
+}
+p.desc-quest {
+  width: 321px;
+}
+.form-control {
+  width: 300px;
+}
+.red-dot {
+  margin-left: -585px;
+}
+.dot-question {
+  max-width: auto;
+}
+.question {
+  font-family: "Neometric-Heavy";
+  padding-top: 50px;
+  margin-left: 100px;
+  font-size: 1.75em;
+  max-width: 200px;
+}
+.form-label {
+  width: 300px;
+}
+.green-dot {
+  margin-right: 585px;
+}
+.yellow-dot {
+  margin-right: 585px;
+}
+.dot-answer {
+  max-width: auto;
+}
+.answer {
+  margin-left: 103px;
+}
+.answer-name {
+  margin-left: 100px;
+}
+.answer-phone-number {
+  margin-left: 75px;
+}
+.radio {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  padding: 40px 5px;
+  width: 320px;
+  font-family: "Neometric-Heavy";
+  font-size: 1em;
+}
+.btn4{
+  font-size: 1em;
+}
+/* Fifth-Section  */
+.gift-heading {
+  max-width: 500px;
+  font-size: 2em;
+}
+.desc-gift {
+  width: 329px;
+}
+div.gift-card {
+  gap: 0px;
+}
+.img-gift{
+  width: 10em;
+}
+p .gift-card {
+  font-family: "Neometric-Medium";
+  font-size: 0.4em;
+}
+p.gift-price {
+  margin-left: -50px;
+  font-size: 2em;
+}
+.gift-price1 {
+  padding-left: 54px;
+  font-size: 2em;
+  margin-top: 30px;
+}
+.gift-price {
+  padding-left: 104px;
+  font-size: 2em;
+  margin-top: 30px;
+}
+.btn5 {
+  width: 175px;
+  margin-left: -6px;
+  font-size: 0.3em;
+  margin-bottom: 0px;
+}
+
+/* Footer */
+
+.footer_logo_text {
+  font-family: "Neometric-Heavy";
+  margin-top: 76px;
+  margin-left: 15px;
+  line-height: 20px;
+}
+span.footer_logo_black {
+  font-size: 1.5em;
+  color: #fff;
+}
+span.footer_logo_red {
+  font-size: 1.5em;
+  color: #cc5253;
+}
+span.footer_under_text {
+  font-family: "Neometric-regular";
+  margin-left: 4px;
+  color: #fff;
+  font-size: 1em;
+}
+ul.footer {
+  display: flex;
+  justify-content: center;
+  max-width: 400px;
+  flex-wrap: wrap;
+}
+ul.footer > li.footer {
+  padding: 5px;
+  margin-bottom: 20px;
+  font-size: 0.7em;
+  line-height: 5px;
+}
 }
