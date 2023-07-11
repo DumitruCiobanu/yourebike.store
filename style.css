@@ -156,7 +156,7 @@ li > a:hover {
   color: #ffb02d;
   text-shadow: 1px 1px 1px #212529;
 }
-.accc{
+.accc {
   color: #ccc;
 }
 nav {
@@ -169,7 +169,7 @@ nav {
   z-index: -1;
 }
 .red-figure {
-  position: fixed;
+  position: absolute;
   top: 0;
   right: 0px;
   height: 768px;
@@ -677,17 +677,26 @@ ul {
 }
 
 /* Modal-Window 1 */
-
+.input-group {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  width: 100%;
+  justify-content: center;
+}
 .modal-content {
-  width: 540px;
+  max-width: 540px;
   background-color: #e6e6e6;
   padding: 20px 20px 20px 20px;
   border: 10px solid #28c387;
   border-radius: 30px;
+  margin: 0 auto;
 }
 .modal-title {
-  font-size: 1.65em;
+  font-size: 1.4em;
   font-family: "Neometric-ExtraBold";
+  margin: 0 auto;
 }
 span.free {
   font-size: 0.6em;
@@ -695,65 +704,135 @@ span.free {
 }
 .modal-descr {
   font-family: "Neometric-Regular";
+  font-size: 1.3em;
 }
 .modal-input {
-  margin: auto;
+  margin: 0 auto;
   padding: 9px;
+  margin-bottom: 50px;
 }
 .modal-label {
+  margin-top: -20px;
   margin-left: 3px;
   font-size: 1.7em;
   font-family: "Neometric-Bold";
 }
 .modal-submit {
+  display: block;
   font-size: 1.3em;
   font-family: "Neometric-Bold";
+  margin: 0px auto;
+  top: -30px;
 }
 
 /* Modal-Window 2 */
-
+.input-group {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  width: 100%;
+  justify-content: center;
+}
+.modal-content {
+  max-width: 540px;
+  background-color: #e6e6e6;
+  padding: 20px 20px 20px 20px;
+  border: 10px solid #28c387;
+  border-radius: 30px;
+  margin: 0 auto;
+}
 .modal-title2 {
-  margin-bottom: -2px;
   text-transform: uppercase;
-  font-size: 1.65em;
+  font-size: 1.4em;
   font-family: "Neometric-ExtraBold";
+  margin: 0 auto;
 }
 .modal-descr2 {
-  font-family: "Neometric-Medium";
+  font-family: "Neometric-Regular";
   padding: 5px;
   font-size: 1.3em;
 }
 .modal-label2 {
   margin-left: 3px;
-  font-size: 1.3em;
+  font-size: 1.7em;
   font-family: "Neometric-Bold";
 }
 .option-line {
+  margin: 0 auto;
   height: 44px;
 }
+.other-options-modal {
+  margin: 0 auto;
+}
 .options-label {
-  max-width: 95px;
+  max-width: 90px;
   font-family: "Neometric-Medium";
+}
+.choose-input {
+  max-width: 310px;
 }
 
 /* Modal-Window 3 */
-
+.modal-content {
+  max-width: 540px;
+  background-color: #e6e6e6;
+  padding: 20px 20px 20px 20px;
+  border: 10px solid #28c387;
+  border-radius: 30px;
+  margin: 0 auto;
+}
 #consultModal3 {
   color: #212529;
 }
+.input-group {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  width: 100%;
+  justify-content: center;
+}
 .modal-title3 {
-  margin-left: 10px;
-  margin-bottom: -2px;
+  margin: 0 auto;
   text-transform: uppercase;
-  font-size: 1.65em;
+  font-size: 1.5em;
   font-family: "Neometric-ExtraBold";
 }
+.modal-descr3 {
+  font-family: "Neometric-Regular";
+  padding: 5px;
+  font-size: 1.3em;
+}
+.options-modal3 {
+  max-width: 95px;
+  font-family: "Neometric-Medium";
+}
+.choose-input2 {
+  max-width: 310px;
+}
+.modal-textarea {
+  margin: 0 auto;
+}
 
-/* Modal-Window 3 */
-
+/* Modal-Window 4 */
+.modal-content {
+  max-width: 540px;
+  background-color: #e6e6e6;
+  padding: 20px 20px 20px 20px;
+  border: 10px solid #28c387;
+  border-radius: 30px;
+  margin: 0 auto;
+}
 .modal-title4 {
-  margin-left: 60px;
+  margin: 0 auto;
+  font-size: 1.9em;
   font-family: "Neometric-ExtraBold";
+}
+.modal-descr4 {
+  font-family: "Neometric-Regular";
+  padding: 5px;
+  font-size: 1.3em;
 }
 
 @media (min-width: 1281px) and (max-width: 1440px) {
@@ -765,7 +844,7 @@ span.free {
   li > a {
     margin-right: 36px;
   }
-   .accc{
+  .accc {
     color: #ccc;
   }
   .main-bike {
@@ -823,7 +902,7 @@ span.free {
     right: -20px;
     margin-top: 170px;
   }
-  .accc{
+  .accc {
     color: #ccc;
   }
   ul > li {
@@ -970,14 +1049,13 @@ span.free {
     flex-direction: column;
     line-height: 10px;
     margin-right: 60px;
-    
+    max-width: 200px;
   }
   li > a {
     color: #ccc;
   }
   ul > li {
     margin-top: 40px;
-    
   }
   ul > li:nth-child(2) {
     margin-left: -11px;
@@ -1199,6 +1277,7 @@ span.free {
     flex-direction: column;
     line-height: 10px;
     margin-right: 20px;
+    max-width: 200px;
   }
   li > a {
     color: #ccc;
@@ -1488,6 +1567,7 @@ span.free {
     flex-direction: column;
     line-height: 10px;
     margin-right: 20px;
+    max-width: 200px;
   }
   ul > li {
     margin-top: 40px;
@@ -1779,7 +1859,7 @@ span.free {
     line-height: 0px;
     margin-right: 10px;
     margin-top: 0px;
-    max-width: 159px;
+    max-width: 170px;
     font-size: 0.8em;
     padding: 0;
   }
@@ -2109,6 +2189,164 @@ span.free {
     font-size: 1em;
     margin-bottom: 60px;
   }
+  /* Modal-Window 1 */
+  .input-group {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    width: 100%;
+    justify-content: center;
+  }
+  .modal-content {
+    max-width: 540px;
+    background-color: #e6e6e6;
+    padding: 20px 20px 20px 20px;
+    border: 10px solid #28c387;
+    border-radius: 30px;
+    margin: 0 auto;
+  }
+  .modal-title {
+    font-size: 1.4em;
+    font-family: "Neometric-ExtraBold";
+    margin: 0 auto;
+  }
+  span.free {
+    font-size: 0.6em;
+    font-family: "Neometric-Regular";
+  }
+  .modal-descr {
+    font-family: "Neometric-Regular";
+    font-size: 1.3em;
+  }
+  .modal-input {
+    margin: 0 auto;
+    padding: 9px;
+    margin-bottom: 50px;
+  }
+  .modal-label {
+    margin-top: -20px;
+    margin-left: 3px;
+    font-size: 1.7em;
+    font-family: "Neometric-Bold";
+  }
+  .modal-submit {
+    display: block;
+    font-size: 1.3em;
+    font-family: "Neometric-Bold";
+    margin: 0px auto;
+    top: -30px;
+  }
+
+  /* Modal-Window 2 */
+  .input-group {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    width: 100%;
+    justify-content: center;
+  }
+  .modal-content {
+    max-width: 540px;
+    background-color: #e6e6e6;
+    padding: 20px 20px 20px 20px;
+    border: 10px solid #28c387;
+    border-radius: 30px;
+    margin: 0 auto;
+  }
+  .modal-title2 {
+    text-transform: uppercase;
+    font-size: 1.4em;
+    font-family: "Neometric-ExtraBold";
+    margin: 0 auto;
+  }
+  .modal-descr2 {
+    font-family: "Neometric-Regular";
+    padding: 5px;
+    font-size: 1.3em;
+  }
+  .modal-label2 {
+    margin-left: 3px;
+    font-size: 1.7em;
+    font-family: "Neometric-Bold";
+  }
+  .option-line {
+    margin: 0 auto;
+    height: 44px;
+  }
+  .other-options-modal {
+    margin: 0 auto;
+  }
+  .options-label {
+    max-width: 90px;
+    font-family: "Neometric-Medium";
+  }
+  .choose-input {
+    max-width: 310px;
+  }
+
+  /* Modal-Window 3 */
+  .modal-content {
+    max-width: 540px;
+    background-color: #e6e6e6;
+    padding: 20px 20px 20px 20px;
+    border: 10px solid #28c387;
+    border-radius: 30px;
+    margin: 0 auto;
+  }
+  #consultModal3 {
+    color: #212529;
+  }
+  .input-group {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    width: 100%;
+    justify-content: center;
+  }
+  .modal-title3 {
+    margin: 0 auto;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    font-family: "Neometric-ExtraBold";
+  }
+  .modal-descr3 {
+    font-family: "Neometric-Regular";
+    padding: 5px;
+    font-size: 1.3em;
+  }
+  .options-modal3 {
+    max-width: 95px;
+    font-family: "Neometric-Medium";
+  }
+  .choose-input2 {
+    max-width: 310px;
+  }
+  .modal-textarea {
+    margin: 0 auto;
+  }
+
+  /* Modal-Window 4 */
+  .modal-content {
+    max-width: 540px;
+    background-color: #e6e6e6;
+    padding: 20px 20px 20px 20px;
+    border: 10px solid #28c387;
+    border-radius: 30px;
+    margin: 0 auto;
+  }
+  .modal-title4 {
+    margin: 0 auto;
+    font-size: 1.9em;
+    font-family: "Neometric-ExtraBold";
+  }
+  .modal-descr4 {
+    font-family: "Neometric-Regular";
+    padding: 5px;
+    font-size: 1.3em;
+  }
 }
 
 @media (min-width: 501px) and (max-width: 604px) {
@@ -2160,7 +2398,7 @@ span.free {
     line-height: 0px;
     margin-right: 10px;
     margin-top: 0px;
-    max-width: 159px;
+    max-width: 160px;
     font-size: 0.7em;
     padding: 0;
   }
@@ -2491,6 +2729,164 @@ span.free {
     font-size: 1em;
     margin-bottom: 60px;
   }
+  /* Modal-Window 1 */
+  .input-group {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    width: 100%;
+    justify-content: center;
+  }
+  .modal-content {
+    max-width: 501px;
+    background-color: #e6e6e6;
+    padding: 20px 20px 20px 20px;
+    border: 10px solid #28c387;
+    border-radius: 30px;
+    margin: 0 auto;
+  }
+  .modal-title {
+    font-size: 1.4em;
+    font-family: "Neometric-ExtraBold";
+    margin: 0 auto;
+  }
+  span.free {
+    font-size: 0.6em;
+    font-family: "Neometric-Regular";
+  }
+  .modal-descr {
+    font-family: "Neometric-Regular";
+    font-size: 1.3em;
+  }
+  .modal-input {
+    margin: 0 auto;
+    padding: 9px;
+    margin-bottom: 50px;
+  }
+  .modal-label {
+    margin-top: -20px;
+    margin-left: 6px;
+    font-size: 1.7em;
+    font-family: "Neometric-Bold";
+  }
+  .modal-submit {
+    display: block;
+    font-size: 1.3em;
+    font-family: "Neometric-Bold";
+    margin: 0px auto;
+    top: -30px;
+  }
+
+  /* Modal-Window 2 */
+  .input-group {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    width: 100%;
+    justify-content: center;
+  }
+  .modal-content {
+    max-width: 501px;
+    background-color: #e6e6e6;
+    padding: 20px 20px 20px 20px;
+    border: 10px solid #28c387;
+    border-radius: 30px;
+    margin: 0 auto;
+  }
+  .modal-title2 {
+    text-transform: uppercase;
+    font-size: 1.4em;
+    font-family: "Neometric-ExtraBold";
+    margin: 0 auto;
+  }
+  .modal-descr2 {
+    font-family: "Neometric-Regular";
+    padding: 5px;
+    font-size: 1.3em;
+  }
+  .modal-label2 {
+    margin-left: 3px;
+    font-size: 1.7em;
+    font-family: "Neometric-Bold";
+  }
+  .option-line {
+    margin: 0 auto;
+    height: 44px;
+  }
+  .other-options-modal {
+    margin: 0 auto;
+  }
+  .options-label {
+    width: 90px;
+    font-family: "Neometric-Medium";
+  }
+  .choose-input {
+    max-width: 310px;
+  }
+
+  /* Modal-Window 3 */
+  .modal-content {
+    max-width: 501px;
+    background-color: #e6e6e6;
+    padding: 20px 20px 20px 20px;
+    border: 10px solid #28c387;
+    border-radius: 30px;
+    margin: 0 auto;
+  }
+  #consultModal3 {
+    color: #212529;
+  }
+  .input-group {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    width: 100%;
+    justify-content: center;
+  }
+  .modal-title3 {
+    margin: 0 auto;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    font-family: "Neometric-ExtraBold";
+  }
+  .modal-descr3 {
+    font-family: "Neometric-Regular";
+    padding: 5px;
+    font-size: 1.3em;
+  }
+  .options-modal3 {
+    max-width: 90px;
+    font-family: "Neometric-Medium";
+  }
+  .choose-input2 {
+    max-width: 310px;
+  }
+  .modal-textarea {
+    margin: 0 auto;
+  }
+
+  /* Modal-Window 4 */
+  .modal-content {
+    max-width: 501px;
+    background-color: #e6e6e6;
+    padding: 20px 20px 20px 20px;
+    border: 10px solid #28c387;
+    border-radius: 30px;
+    margin: 0 auto;
+  }
+  .modal-title4 {
+    margin: 0 auto;
+    font-size: 1.9em;
+    font-family: "Neometric-ExtraBold";
+  }
+  .modal-descr4 {
+    font-family: "Neometric-Regular";
+    padding: 5px;
+    font-size: 1.3em;
+  }
 }
 
 @media (min-width: 426px) and (max-width: 500px) {
@@ -2540,7 +2936,7 @@ span.free {
   ul.nav {
     flex-direction: column;
     line-height: 0px;
-    margin-right: 3px;
+    margin-right: 0px;
     margin-top: 0px;
     max-width: 145px;
     font-size: 0.6em;
@@ -2907,6 +3303,179 @@ span.free {
     font-size: 1em;
     margin-bottom: 60px;
   }
+  /* Modal-Window 1 */
+  .input-group {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    width: 100%;
+    justify-content: center;
+  }
+  .modal-content {
+    max-width: 426px;
+    background-color: #e6e6e6;
+    padding: 20px 20px 20px 20px;
+    border: 10px solid #28c387;
+    border-radius: 30px;
+    margin: 0 auto;
+  }
+  .modal-title {
+    font-size: 1.1em;
+    font-family: "Neometric-ExtraBold";
+    margin: 0 auto;
+  }
+  span.free {
+    font-size: 0.9em;
+    font-family: "Neometric-Regular";
+  }
+  .modal-descr {
+    font-family: "Neometric-Regular";
+    font-size: 1em;
+  }
+  .modal-input {
+    margin: 0 auto;
+    padding: 20px;
+    margin-bottom: 50px;
+    max-width: 318px;
+  }
+  .modal-label {
+    display: flex;
+    margin-top: -20px;
+    margin-left: 9px;
+    font-size: 1.4em;
+    font-family: "Neometric-Bold";
+  }
+  .modal-submit {
+    display: block;
+    font-size: 1.3em;
+    font-family: "Neometric-Bold";
+    margin: 0px auto;
+    top: -30px;
+    max-width: 318px;
+  }
+
+  /* Modal-Window 2 */
+  .input-group {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    width: 100%;
+    justify-content: center;
+  }
+  .modal-content {
+    max-width: 426px;
+    background-color: #e6e6e6;
+    padding: 20px 20px 20px 20px;
+    border: 10px solid #28c387;
+    border-radius: 30px;
+    margin: 0 auto;
+  }
+  .modal-title2 {
+    text-transform: uppercase;
+    font-size: 1.1em;
+    font-family: "Neometric-ExtraBold";
+    margin: 0 auto;
+  }
+  .modal-descr2 {
+    font-family: "Neometric-Regular";
+    padding: 5px;
+    font-size: 1em;
+  }
+  .modal-label2 {
+    margin-left: 6px;
+    font-size: 1.4em;
+    font-family: "Neometric-Bold";
+  }
+  .option-line {
+    margin: 0 auto;
+    height: 44px;
+  }
+  .other-options-modal {
+    margin: 0 auto;
+    width: 318px;
+    height: 44px;
+    margin-bottom: 40px;
+  }
+  .options-label {
+    width: 90px;
+    font-family: "Neometric-Medium";
+    height: 44px;
+    padding-bottom: 1px;
+  }
+  .choose-input {
+    max-width: 228px;
+    height: 44px;
+  }
+
+  /* Modal-Window 3 */
+  .modal-content {
+    max-width: 426px;
+    background-color: #e6e6e6;
+    padding: 20px 20px 20px 20px;
+    border: 10px solid #28c387;
+    border-radius: 30px;
+    margin: 0 auto;
+  }
+  #consultModal3 {
+    color: #212529;
+  }
+  .input-group {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    width: 100%;
+    justify-content: center;
+  }
+  .modal-title3 {
+    margin: 0 auto;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    font-family: "Neometric-ExtraBold";
+  }
+  .modal-descr3 {
+    font-family: "Neometric-Regular";
+    padding: 5px;
+    font-size: 1em;
+  }
+  .options-modal3 {
+    max-width: 90px;
+    font-family: "Neometric-Medium";
+  }
+  .choose-input2 {
+    max-width: 228px;
+    height: 44px;
+  }
+  .modal-textarea {
+    margin: 0 auto;
+    max-width: 318px;
+    height: 44px;
+    margin-bottom: 40px;
+    padding-top: 11px;
+    padding-left: 20px;
+  }
+
+  /* Modal-Window 4 */
+  .modal-content {
+    max-width: 426px;
+    background-color: #e6e6e6;
+    padding: 20px 20px 20px 20px;
+    border: 10px solid #28c387;
+    border-radius: 30px;
+    margin: 0 auto;
+  }
+  .modal-title4 {
+    margin: 0 auto;
+    font-size: 1.5em;
+    font-family: "Neometric-ExtraBold";
+  }
+  .modal-descr4 {
+    font-family: "Neometric-Regular";
+    padding: 5px;
+    font-size: 1em;
+  }
 }
 
 @media (min-width: 376px) and (max-width: 425px) {
@@ -2958,7 +3527,7 @@ span.free {
     line-height: 0px;
     margin-right: 0px;
     margin-top: 0px;
-    max-width: 116px;
+    max-width: 120px;
     font-size: 0.5em;
     padding: 0;
   }
@@ -2981,7 +3550,7 @@ span.free {
     margin-left: -22px;
   }
   .red-figure {
-    height: 535px;
+    height: 536px;
     width: 200px;
   }
   .description {
@@ -3325,103 +3894,182 @@ span.free {
     margin-bottom: 60px;
   }
   /* Modal-Window 1 */
-
+  .input-group {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    width: 100%;
+    justify-content: center;
+  }
   .modal-content {
-    width: 280px;
+    max-width: 376px;
     background-color: #e6e6e6;
     padding: 20px 20px 20px 20px;
-    margin: auto;
     border: 10px solid #28c387;
     border-radius: 30px;
+    margin: 0 auto;
   }
   .modal-title {
-    font-size: 1em;
+    font-size: 0.9em;
     font-family: "Neometric-ExtraBold";
+    margin: 0 auto;
   }
   span.free {
-    font-size: 0.9em;
+    font-size: 0.8em;
     font-family: "Neometric-Regular";
   }
   .modal-descr {
     font-family: "Neometric-Regular";
     font-size: 0.8em;
+    margin: 0 auto;
+    margin-bottom: 30px;
   }
   .modal-input {
-    margin: auto;
-    padding: 15px;
-    max-width: 200px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-bottom: 50px;
+    max-width: 268px;
   }
   .modal-label {
-    margin-left: 3px;
-    font-size: 1em;
+    display: flex;
+    margin-top: -20px;
+    margin-left: 6px;
+    font-size: 1.4em;
     font-family: "Neometric-Bold";
   }
   .modal-submit {
-    font-size: 1em;
+    display: block;
+    font-size: 1.3em;
     font-family: "Neometric-Bold";
-    max-width: 200px;
+    margin: 0px auto;
+    top: -30px;
+    max-width: 268px;
   }
 
   /* Modal-Window 2 */
-
+  .input-group {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    width: 100%;
+    justify-content: center;
+  }
+  .modal-content {
+    max-width: 376px;
+    background-color: #e6e6e6;
+    padding: 20px 20px 20px 20px;
+    border: 10px solid #28c387;
+    border-radius: 30px;
+    margin: 0 auto;
+  }
   .modal-title2 {
-    margin-bottom: -2px;
     text-transform: uppercase;
-    font-size: 1em;
+    font-size: 0.9em;
     font-family: "Neometric-ExtraBold";
+    margin: 0 auto;
   }
   .modal-descr2 {
-    font-family: "Neometric-Medium";
+    font-family: "Neometric-Regular";
     padding: 5px;
     font-size: 0.8em;
-    max-width: 200px;
   }
   .modal-label2 {
-    margin-left: 3px;
-    font-size: 1em;
+    margin-left: 6px;
+    font-size: 1.4em;
     font-family: "Neometric-Bold";
   }
   .option-line {
+    margin: 0 auto;
     height: 44px;
-    width: 200px;
-  }
-  .options-label {
-    max-width: 70px;
-    font-family: "Neometric-Medium";
-    height: 30px;
-  }
-  .form-select {
-    height: 30px;
   }
   .other-options-modal {
-    max-width: 200px;
+    margin: 0 auto;
+    height: 44px;
+    margin-bottom: 40px;
+    width: 268px;
+    padding-top: 11px;
+    padding-left: 20px;
+  }
+  .options-label {
+    width: 90px;
+    font-family: "Neometric-Medium";
+    height: 44px;
+    padding-bottom: 1px;
+  }
+  .choose-input {
+    max-width: 178px;
+    height: 44px;
   }
 
   /* Modal-Window 3 */
-
+  .modal-content {
+    max-width: 376px;
+    background-color: #e6e6e6;
+    padding: 20px 20px 20px 20px;
+    border: 10px solid #28c387;
+    border-radius: 30px;
+    margin: 0 auto;
+  }
   #consultModal3 {
     color: #212529;
   }
+  .input-group {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    width: 100%;
+    justify-content: center;
+  }
   .modal-title3 {
-    margin-left: 10px;
-    margin-bottom: -2px;
+    margin: 0 auto;
     text-transform: uppercase;
+    font-size: 1em;
+    font-family: "Neometric-ExtraBold";
+  }
+  .modal-descr3 {
+    font-family: "Neometric-Regular";
+    padding: 5px;
+    font-size: 0.9em;
+  }
+  .options-modal3 {
+    width: 90px;
+    font-family: "Neometric-Medium";
+    padding-top: 3px;
+  }
+  .choose-input2 {
+    max-width: 178px;
+    height: 44px;
+  }
+  .modal-textarea {
+    margin: 0 auto;
+    max-width: 268px;
+    height: 44px;
+    margin-bottom: 40px;
+    padding-top: 11px;
+    padding-left: 20px;
+  }
+
+  /* Modal-Window 4 */
+  .modal-content {
+    max-width: 376px;
+    background-color: #e6e6e6;
+    padding: 20px 20px 20px 20px;
+    border: 10px solid #28c387;
+    border-radius: 30px;
+    margin: 0 auto;
+  }
+  .modal-title4 {
+    margin: 0 auto;
     font-size: 1.3em;
     font-family: "Neometric-ExtraBold";
   }
-  .modal-textarea {
-    max-width: 200px;
-  }
-  .options-modal3 {
-    padding-top: 10px;
-  }
-
-  /* Modal-Window 3 */
-
-  .modal-title4 {
-    margin-left: 22px;
-    font-family: "Neometric-ExtraBold";
-    font-size: 1.5em;
+  .modal-descr4 {
+    font-family: "Neometric-Regular";
+    padding: 5px;
+    font-size: 0.9em;
   }
 }
 
@@ -3477,7 +4125,7 @@ span.free {
     line-height: 0px;
     margin-right: 0px;
     margin-top: 0px;
-    max-width: 116px;
+    max-width: 120px;
     font-size: 0.5em;
     padding: 0;
   }
@@ -3854,102 +4502,181 @@ span.free {
     margin-bottom: 60px;
   }
   /* Modal-Window 1 */
-
+  .input-group {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    width: 100%;
+    justify-content: center;
+  }
   .modal-content {
-    width: 280px;
+    max-width: 320px;
     background-color: #e6e6e6;
     padding: 20px 20px 20px 20px;
-    margin: auto;
     border: 10px solid #28c387;
     border-radius: 30px;
+    margin: 0 auto;
   }
   .modal-title {
-    font-size: 1em;
+    font-size: 0.75em;
     font-family: "Neometric-ExtraBold";
+    margin: 0 auto;
   }
   span.free {
-    font-size: 0.9em;
+    font-size: 0.64em;
     font-family: "Neometric-Regular";
   }
   .modal-descr {
     font-family: "Neometric-Regular";
-    font-size: 0.8em;
+    font-size: 0.7em;
+    margin: 0 auto;
+    margin-bottom: 30px;
   }
   .modal-input {
-    margin: auto;
-    padding: 15px;
-    max-width: 200px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-bottom: 50px;
+    max-width: 210px;
   }
   .modal-label {
-    margin-left: 3px;
-    font-size: 1em;
+    display: flex;
+    margin-top: -20px;
+    margin-left: 9px;
+    font-size: 1.3em;
     font-family: "Neometric-Bold";
   }
   .modal-submit {
-    font-size: 1em;
+    display: block;
+    font-size: 1.3em;
     font-family: "Neometric-Bold";
-    max-width: 200px;
+    margin: 0px auto;
+    top: -30px;
+    max-width: 210px;
   }
 
   /* Modal-Window 2 */
-
+  .input-group {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    width: 100%;
+    justify-content: center;
+  }
+  .modal-content {
+    max-width: 320px;
+    background-color: #e6e6e6;
+    padding: 20px 20px 20px 20px;
+    border: 10px solid #28c387;
+    border-radius: 30px;
+    margin: 0 auto;
+  }
   .modal-title2 {
-    margin-bottom: -2px;
     text-transform: uppercase;
-    font-size: 1em;
+    font-size: 0.757em;
     font-family: "Neometric-ExtraBold";
+    margin: 0 auto;
   }
   .modal-descr2 {
-    font-family: "Neometric-Medium";
+    font-family: "Neometric-Regular";
     padding: 5px;
-    font-size: 0.8em;
-    max-width: 200px;
+    font-size: 0.65em;
   }
   .modal-label2 {
-    margin-left: 3px;
-    font-size: 1em;
+    margin-left: 6px;
+    font-size: 1.3em;
     font-family: "Neometric-Bold";
   }
   .option-line {
+    margin: 0 auto;
     height: 44px;
-    width: 200px;
-  }
-  .options-label {
-    max-width: 70px;
-    font-family: "Neometric-Medium";
-    height: 30px;
-  }
-  .form-select {
-    height: 30px;
   }
   .other-options-modal {
-    max-width: 200px;
+    margin: 0 auto;
+    height: 44px;
+    margin-bottom: 40px;
+    width: 210px;
+    padding-top: 11px;
+    padding-left: 20px;
+  }
+  .options-label {
+    width: 90px;
+    font-family: "Neometric-Medium";
+    height: 44px;
+    padding-bottom: 3px;
+  }
+  .choose-input {
+    max-width: 120px;
+    height: 44px;
   }
 
   /* Modal-Window 3 */
-
+  .modal-content {
+    max-width: 320px;
+    background-color: #e6e6e6;
+    padding: 20px 20px 20px 20px;
+    border: 10px solid #28c387;
+    border-radius: 30px;
+    margin: 0 auto;
+  }
   #consultModal3 {
     color: #212529;
   }
+  .input-group {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    width: 100%;
+    justify-content: center;
+  }
   .modal-title3 {
-    margin-left: 10px;
-    margin-bottom: -2px;
+    margin: 0 auto;
     text-transform: uppercase;
-    font-size: 1.3em;
+    font-size: 0.776em;
     font-family: "Neometric-ExtraBold";
   }
-  .modal-textarea {
-    max-width: 200px;
+  .modal-descr3 {
+    font-family: "Neometric-Regular";
+    padding: 5px;
+    font-size: 0.65em;
   }
   .options-modal3 {
-    padding-top: 10px;
+    width: 90px;
+    font-family: "Neometric-Medium";
+    padding-top: 3px;
+  }
+  .choose-input2 {
+    max-width: 120px;
+    height: 44px;
+  }
+  .modal-textarea {
+    margin: 0 auto;
+    max-width: 210px;
+    height: 44px;
+    margin-bottom: 40px;
+    padding-top: 11px;
+    padding-left: 20px;
   }
 
-  /* Modal-Window 3 */
-
+  /* Modal-Window 4 */
+  .modal-content {
+    max-width: 320px;
+    background-color: #e6e6e6;
+    padding: 20px 20px 20px 20px;
+    border: 10px solid #28c387;
+    border-radius: 30px;
+    margin: 0 auto;
+  }
   .modal-title4 {
-    margin-left: 22px;
+    margin: 0 auto;
+    font-size: 1.024em;
     font-family: "Neometric-ExtraBold";
-    font-size: 1.5em;
+  }
+  .modal-descr4 {
+    font-family: "Neometric-Regular";
+    padding: 5px;
+    font-size: 0.75em;
   }
 }
