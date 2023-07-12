@@ -66,8 +66,10 @@
 body {
   background-color: #cccccc;
   /* overflow-x: hidden; */
-  width: 100vw;
-  height: auto;
+   width: 100vw;
+    /* max-width: 1440px;
+    margin: 0 auto;  */
+     height: auto;
 }
 
 /* first-section */
@@ -835,6 +837,508 @@ span.free {
   font-size: 1.3em;
 }
 
+@media (min-width: 1601px) and (max-width: 1920px) {
+  .welcome-section {
+    width: 100vw;
+  }
+  .container {
+    padding: 0 20px;
+    margin: 0 auto;
+    max-width: 1920px;
+    width: 100%;
+  }
+  .container1 {
+    padding: 0;
+    margin: 0 auto;
+    max-width: 1920px;
+    width: 100%;
+  }
+  .container4 {
+    padding: 0px 0px;
+    margin: 0 auto;
+    max-width: 1920px;
+    width: 100%;
+  }
+  h1 {
+    text-align: left;
+    margin-left: 90px;
+    margin-top: 140px;
+    font-family: "Neometric-HeavyItalic";
+    font-size: 2.5em;
+    max-width: 600px;
+  }
+  span.red {
+    color: #cc5253;
+    text-transform: uppercase;
+    margin-left: 0px;
+  }
+  span.red-e {
+    color: #cc5253;
+  }
+  .navbar-brand {
+    display: flex;
+    margin-left: 80px;
+  }
+  .logo {
+    margin-top: 40px;
+    margin-left: 10px;
+    color: #cc5253;
+  }
+  .logo_text {
+    font-family: "Neometric-Heavy";
+    margin-top: 76px;
+    margin-left: 15px;
+    line-height: 20px;
+  }
+  span.logo_black {
+    font-size: 1.87em;
+  }
+  span.logo_red {
+    font-size: 1.87em;
+    color: #cc5253;
+  }
+  span.under_text {
+    font-family: "Neometric-regular";
+    margin-left: 4px;
+    color: #4b4a4a;
+  }
+  ul.nav {
+    margin-right: 95px;
+  }
+  ul > li {
+    list-style: none;
+    display: inline-block;
+    padding-left: 5px;
+    margin-top: 64px;
+  }
+  li > a {
+    text-decoration: none;
+    color: #5e5e5e;
+    font-family: "Neometric-regular";
+    margin-right: 40px;
+    font-weight: bolder;
+  }
+  li > a:hover {
+    color: #ffb02d;
+    text-shadow: 1px 1px 1px #212529;
+  }
+  .accc {
+    color: #ccc;
+  }
+  nav {
+    background-color: none;
+  }
+  .wrapper {
+    top: 0;
+    right: 0;
+    filter: drop-shadow(-10px 0px 20px #6d6d6d);
+    z-index: -1;
+  }
+  .red-figure {
+    position: absolute;
+    top: 0;
+    right: 0px;
+    height: 716px;
+    width: 550px;
+    clip-path: polygon(37% 0, 100% 0, 100% 100%, 0 100%);
+    background-color: #ca5356;
+    z-index: -1;
+  }
+  .description {
+    width: 600px;
+    margin-left: 90px;
+    font-family: "Neometric-ExtraLight";
+    color: #5e5e5e;
+    font-weight: bolder;
+    font-size: 1em;
+  }
+  .main-bike {
+    display: inline-block;
+    width: 32em;
+    transform: rotateY(180deg);
+    margin-left: 55%;
+    margin-top: -300px;
+    position: absolute;
+  }
+  .descr-list1 {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    gap: 100px;
+    margin-right: 280px;
+    margin-top: 40px;
+    line-height: 20px;
+  }
+  .descr-list2 {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    gap: 110px;
+    margin-right: 340px;
+    margin-top: 40px;
+    line-height: 20px;
+  }
+  dd {
+    font-size: 0.7em;
+    font-family: "Neometric-MediumItalic";
+  }
+  .dd2,
+  .dd4,
+  .dt2,
+  .dt4 {
+    color: #cccccc;
+  }
+  dt {
+    font-family: "Neometric-Heavy";
+    font-size: 2.1em;
+  }
+  .dt1 {
+    margin-left: -10px;
+    color: #cc5253;
+  }
+  .dt3 {
+    margin-left: -65px;
+    color: #cc5253;
+  }
+  .btn1 {
+    padding: 20px;
+    border-radius: 15px;
+    border: none;
+    background-color: #cc5253;
+    font-family: "Neometric-ExtraBold";
+    color: #cccccc;
+    margin-left: 85px;
+    position: relative;
+    top: -140px;
+  }
+  
+  /* Second-section */
+  
+  .second-section {
+    width: 100vw;
+    height: 1243px;
+  }
+  div.lineup {
+    background-color: #b9b9b9;
+    margin: 0 auto;
+    max-width: 1000px;
+    padding: 10px;
+    border-radius: 40px 10px 40px 10px;
+    margin-top: 15px;
+  }
+  
+  
+  /* Fourth-section */
+  
+  div.quest {
+    background-color: #b9b9b9;
+    margin: 43px auto;
+    max-width: 1000px;
+    align-items: center;
+    padding: 10px;
+    border-radius: 40px 10px 40px 10px;
+  }
+  .question {
+    font-family: "Neometric-Heavy";
+    padding-top: 50px;
+    margin-left: 510px;
+    font-size: 1.75em;
+    max-width: 200px;
+  }
+  .answer {
+    font-family: "Neometric-Heavy";
+    padding-top: 10px;
+    margin-left: 513px;
+    padding-bottom: 15px;
+    font-size: 1.75em;
+    max-width: 200px;
+  }
+  .answer-name {
+    margin-left: 505px;
+    font-family: "Neometric-Heavy";
+    margin-top: 10px;
+    font-size: 1.75em;
+    max-width: 320px;
+  }
+  .answer-phone-number {
+    margin-left: 480px;
+    font-family: "Neometric-Heavy";
+    margin-top: 10px;
+    font-size: 1.75em;
+    max-width: 500px;
+  }
+  .radio {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    padding: 40px 10px;
+    width: 700px;
+    font-family: "Neometric-Heavy";
+    font-size: 1.2em;
+  }
+
+
+  ul.footer {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1500px;
+    margin: auto;
+  }
+
+}
+
+
+@media (min-width: 1441px) and (max-width: 1600px) {
+  .welcome-section {
+    width: 100vw;
+  }
+  .container {
+    padding: 0 20px;
+    margin: 0 auto;
+    max-width: 1600px;
+    width: 100%;
+  }
+  .container1 {
+    padding: 0;
+    margin: 0 auto;
+    max-width: 1600px;
+    width: 100%;
+  }
+  .container4 {
+    padding: 0px 0px;
+    margin: 0 auto;
+    max-width: 1600px;
+    width: 100%;
+  }
+  h1 {
+    text-align: left;
+    margin-left: 90px;
+    margin-top: 140px;
+    font-family: "Neometric-HeavyItalic";
+    font-size: 2.5em;
+    max-width: 600px;
+  }
+  span.red {
+    color: #cc5253;
+    text-transform: uppercase;
+    margin-left: 0px;
+  }
+  span.red-e {
+    color: #cc5253;
+  }
+  .navbar-brand {
+    display: flex;
+    margin-left: 80px;
+  }
+  .logo {
+    margin-top: 40px;
+    margin-left: 10px;
+    color: #cc5253;
+  }
+  .logo_text {
+    font-family: "Neometric-Heavy";
+    margin-top: 76px;
+    margin-left: 15px;
+    line-height: 20px;
+  }
+  span.logo_black {
+    font-size: 1.87em;
+  }
+  span.logo_red {
+    font-size: 1.87em;
+    color: #cc5253;
+  }
+  span.under_text {
+    font-family: "Neometric-regular";
+    margin-left: 4px;
+    color: #4b4a4a;
+  }
+  ul.nav {
+    margin-right: 95px;
+  }
+  ul > li {
+    list-style: none;
+    display: inline-block;
+    padding-left: 5px;
+    margin-top: 64px;
+  }
+  li > a {
+    text-decoration: none;
+    color: #5e5e5e;
+    font-family: "Neometric-regular";
+    margin-right: 40px;
+    font-weight: bolder;
+  }
+  li > a:hover {
+    color: #ffb02d;
+    text-shadow: 1px 1px 1px #212529;
+  }
+  .accc {
+    color: #ccc;
+  }
+  nav {
+    background-color: none;
+  }
+  .wrapper {
+    top: 0;
+    right: 0;
+    filter: drop-shadow(-10px 0px 20px #6d6d6d);
+    z-index: -1;
+  }
+  .red-figure {
+    position: absolute;
+    top: 0;
+    right: 0px;
+    height: 716px;
+    width: 550px;
+    clip-path: polygon(37% 0, 100% 0, 100% 100%, 0 100%);
+    background-color: #ca5356;
+    z-index: -1;
+  }
+  .description {
+    width: 600px;
+    margin-left: 90px;
+    font-family: "Neometric-ExtraLight";
+    color: #5e5e5e;
+    font-weight: bolder;
+    font-size: 1em;
+  }
+  .main-bike {
+    display: inline-block;
+    width: 32em;
+    transform: rotateY(180deg);
+    margin-left: 55%;
+    margin-top: -300px;
+    position: absolute;
+  }
+  .descr-list1 {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    gap: 100px;
+    margin-right: 280px;
+    margin-top: 40px;
+    line-height: 20px;
+  }
+  .descr-list2 {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    gap: 110px;
+    margin-right: 340px;
+    margin-top: 40px;
+    line-height: 20px;
+  }
+  dd {
+    font-size: 0.7em;
+    font-family: "Neometric-MediumItalic";
+  }
+  .dd2,
+  .dd4,
+  .dt2,
+  .dt4 {
+    color: #cccccc;
+  }
+  dt {
+    font-family: "Neometric-Heavy";
+    font-size: 2.1em;
+  }
+  .dt1 {
+    margin-left: -10px;
+    color: #cc5253;
+  }
+  .dt3 {
+    margin-left: -65px;
+    color: #cc5253;
+  }
+  .btn1 {
+    padding: 20px;
+    border-radius: 15px;
+    border: none;
+    background-color: #cc5253;
+    font-family: "Neometric-ExtraBold";
+    color: #cccccc;
+    margin-left: 85px;
+    position: relative;
+    top: -140px;
+  }
+  
+  /* Second-section */
+  
+  .second-section {
+    width: 100vw;
+    height: 1243px;
+  }
+  div.lineup {
+    background-color: #b9b9b9;
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 10px;
+    border-radius: 40px 10px 40px 10px;
+    margin-top: 15px;
+  }
+  
+  
+  /* Fourth-section */
+  
+  div.quest {
+    background-color: #b9b9b9;
+    margin: 43px auto;
+    max-width: 800px;
+    align-items: center;
+    padding: 10px;
+    border-radius: 40px 10px 40px 10px;
+  }
+  .question {
+    font-family: "Neometric-Heavy";
+    padding-top: 50px;
+    margin-left: 350px;
+    font-size: 1.75em;
+    max-width: 200px;
+  }
+  .answer {
+    font-family: "Neometric-Heavy";
+    padding-top: 10px;
+    margin-left: 353px;
+    padding-bottom: 15px;
+    font-size: 1.75em;
+    max-width: 200px;
+  }
+  .answer-name {
+    margin-left: 345px;
+    font-family: "Neometric-Heavy";
+    margin-top: 10px;
+    font-size: 1.75em;
+    max-width: 320px;
+  }
+  .answer-phone-number {
+    margin-left: 320px;
+    font-family: "Neometric-Heavy";
+    margin-top: 10px;
+    font-size: 1.75em;
+    max-width: 500px;
+  }
+  .radio {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    padding: 40px 10px;
+    width: 700px;
+    font-family: "Neometric-Heavy";
+    font-size: 1.2em;
+  }
+
+
+  ul.footer {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1300px;
+    margin: auto;
+  }
+
+}
+
+
 @media (min-width: 1281px) and (max-width: 1440px) {
   /* first-section */
 
@@ -1047,7 +1551,6 @@ span.free {
   }
   ul.nav {
     flex-direction: column;
-    line-height: 10px;
     margin-right: 60px;
     max-width: 200px;
   }
@@ -1055,7 +1558,7 @@ span.free {
     color: #ccc;
   }
   ul > li {
-    margin-top: 40px;
+    margin-top: 26px;
   }
   ul > li:nth-child(2) {
     margin-left: -11px;
@@ -1275,7 +1778,6 @@ span.free {
   }
   ul.nav {
     flex-direction: column;
-    line-height: 10px;
     margin-right: 20px;
     max-width: 200px;
   }
@@ -1283,7 +1785,7 @@ span.free {
     color: #ccc;
   }
   ul > li {
-    margin-top: 40px;
+    margin-top: 26px;
   }
   ul > li:nth-child(2) {
     margin-left: -10px;
@@ -1565,12 +2067,11 @@ span.free {
   }
   ul.nav {
     flex-direction: column;
-    line-height: 10px;
     margin-right: 20px;
     max-width: 200px;
   }
   ul > li {
-    margin-top: 40px;
+    margin-top: 26px;
   }
   ul > li:nth-child(2) {
     margin-left: -10px;
@@ -1856,7 +2357,6 @@ span.free {
   }
   ul.nav {
     flex-direction: column;
-    line-height: 0px;
     margin-right: 10px;
     margin-top: 0px;
     max-width: 170px;
@@ -1867,7 +2367,7 @@ span.free {
     color: #ccc;
   }
   ul > li {
-    margin-top: 40px;
+    margin-top: 21px;
   }
   ul > li:nth-child(2) {
     margin-left: -8px;
@@ -2395,7 +2895,6 @@ span.free {
   }
   ul.nav {
     flex-direction: column;
-    line-height: 0px;
     margin-right: 10px;
     margin-top: 0px;
     max-width: 160px;
@@ -2406,7 +2905,7 @@ span.free {
     color: #ccc;
   }
   ul > li {
-    margin-top: 40px;
+    margin-top: 23px;
   }
   ul > li:nth-child(2) {
     margin-left: -8px;
@@ -2935,7 +3434,6 @@ span.free {
   }
   ul.nav {
     flex-direction: column;
-    line-height: 0px;
     margin-right: 0px;
     margin-top: 0px;
     max-width: 145px;
@@ -2946,7 +3444,7 @@ span.free {
     color: #ccc;
   }
   ul > li {
-    margin-top: 40px;
+    margin-top: 25px;
   }
   ul > li:nth-child(2) {
     margin-left: -7px;
@@ -3524,7 +4022,6 @@ span.free {
   }
   ul.nav {
     flex-direction: column;
-    line-height: 0px;
     margin-right: 0px;
     margin-top: 0px;
     max-width: 120px;
@@ -3535,7 +4032,7 @@ span.free {
     color: #ccc;
   }
   ul > li {
-    margin-top: 40px;
+    margin-top: 28px;
   }
   ul > li:nth-child(2) {
     margin-left: -6px;
@@ -3550,7 +4047,7 @@ span.free {
     margin-left: -22px;
   }
   .red-figure {
-    height: 533px;
+    height: 536px;
     width: 200px;
   }
   .description {
@@ -4122,7 +4619,6 @@ span.free {
   }
   ul.nav {
     flex-direction: column;
-    line-height: 0px;
     margin-right: 0px;
     margin-top: 0px;
     max-width: 120px;
@@ -4133,7 +4629,7 @@ span.free {
     color: #ccc;
   }
   ul > li {
-    margin-top: 40px;
+    margin-top: 29px;
   }
   ul > li:nth-child(2) {
     margin-left: -6px;
